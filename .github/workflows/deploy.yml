@@ -24,7 +24,7 @@ jobs:
             --document-name "AWS-RunShellScript" \
             --parameters commands='[
               "cd /home/ssm-user/aura-glow",
-              "git pull origin main",
+              "git pull origin master",
               "npm install",
               "pm2 restart aura-glow"
             ]'
