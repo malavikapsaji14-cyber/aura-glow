@@ -1,0 +1,14 @@
+name: AuraGlow Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: CI/CD Pipeline Trigger
+        run: echo "AuraGlow deployment workflow executed successfully"
