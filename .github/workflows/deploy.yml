@@ -1,14 +1,11 @@
-name: AuraGlow Deploy
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: CI/CD Pipeline Trigger
-        run: echo "AuraGlow deployment workflow executed successfully"
+- name: Deploy via SSM
+  run: |
+    aws ssm send-command \
+      --instance-ids "YOUR_INSTANCE_ID" \
+      --document-name "AWS-RunShellScript" \
+      --parameters commands='[
+        "cd /home/ssm-user/aura-glow",
+        "git pull origin main",
+        "npm install",
+        "pm2 restart aura-glow"
+      ]'
