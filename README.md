@@ -32,3 +32,90 @@ GitHub Actions (CI/CD)
 Nginx
 PM2
 
+🔐 Features
+👤 User Features
+User registration & login
+Session-based authentication
+Product browsing
+Add to cart
+Place orders
+Customer reviews
+🛠️ Admin Features
+Admin dashboard
+Product management
+User management
+Review moderation
+🔒 Security Features
+Password hashing (bcrypt/SHA)
+Secure sessions
+Input validation
+Role-based access control
+HTTP security headers
+
+☁️ AWS Infrastructure
+VPC with public/private subnets
+EC2 instance for application hosting
+Application Load Balancer for traffic distribution
+Security Groups for access control
+IAM roles for secure AWS access
+
+🔁 CI/CD Pipeline
+GitHub Actions triggers deployment on push to master  branch
+SSH-based deployment to EC2
+PM2 restarts application automatically
+Zero-downtime deployment flow (basic level)
+
+📦 Project Structure
+AuraGlow/
+│
+├── backend/
+│   ├── routes/
+│   ├── models/
+│   ├── controllers/
+│   └── server.js
+│
+├── frontend/
+│   ├── pages/
+│   └── assets/
+│
+├── infra/ (Terraform)
+│   ├── main.tf
+│   ├── vpc.tf
+│   └── security.tf
+│
+├── .github/workflows/
+│   └── deploy.yml
+│
+└── README.md
+
+⚙️ Setup Instructions (Local)
+# Clone repo
+git clone https://github.com/malavikapsaji14-cyber/aura-glow.git
+
+# Install dependencies
+npm install
+
+# Run application
+npm start
+
+🚀 Deployment Flow
+Code Push → GitHub Actions → SSH to EC2 → Pull Latest Code → PM2 Restart → Live Update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
