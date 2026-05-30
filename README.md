@@ -101,8 +101,7 @@ npm start
 🚀 Deployment Flow
 Code Push → GitHub Actions → SSH to EC2 → Pull Latest Code → PM2 Restart → Live Update
 
-
-
+To view the site:http://aura-glow-alb-1905105520.us-east-1.elb.amazonaws.com/
 
 
 
