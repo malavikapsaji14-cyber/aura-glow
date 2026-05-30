@@ -5,8 +5,8 @@ Aura Glow is a full-stack e-commerce web application for cosmetics, built using 
 
 It is deployed on AWS using an Application Load Balancer, EC2 instances, and Terraform-managed infrastructure.
 
-🚀 Live Deployment
-aura-glow-alb-1905105520.us-east-1.elb.amazonaws.com
+🚀 Live Deployment:
+http://aura-glow-alb-1905105520.us-east-1.elb.amazonaws.com/
 
 🧱 Architecture Overview
 
@@ -101,7 +101,7 @@ npm start
 🚀 Deployment Flow
 Code Push → GitHub Actions → SSH to EC2 → Pull Latest Code → PM2 Restart → Live Update
 
-To view the site:http://aura-glow-alb-1905105520.us-east-1.elb.amazonaws.com/
+
 
 
 
